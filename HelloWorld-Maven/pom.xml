@@ -4,17 +4,13 @@
   <groupId>com.chandru</groupId>
   <artifactId>HelloWorld-Maven</artifactId>
   <packaging>war</packaging>
-  <version>1.0.0</version>
+  <version>1.0.BUILD_NUMBER</version>
   <name>HelloWorld</name>
   <url>http://maven.apache.org</url>
   <distributionManagement>
-     <repository>
-         <id>central</id>
-         <name>c29a515819cd-releases</name>
-         <url>http://i00039.hosts.appranix.info:8081/artifactory/libs-release-local</url>
-     </repository>
+        <repository>
+          <id>nexus-releases</id>
+          <url>http://i00039.hosts.appranix.info:8081/nexus/content/repositories/releases</url>
+        </repository>
   </distributionManagement>
-  <build>
-    <finalName>HelloWorld</finalName>
-  </build>
 </project>
